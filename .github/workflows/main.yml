@@ -1,0 +1,17 @@
+name: Workflow "dummy" para BE-Orders
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    ir_a_buscar_yml_a_principal:
+        name: Ir a buscar el yml de repo Principal
+        uses: ObligatorioArbeloRodriguez/Principal/.github/workflows/main.yml@main
+        with:
+            app_name: be-orders
+            sonar_project_key: ObligatorioArbeloRodriguez_BE-Orders
+            nombre_repo_ecr: orders-repo
+        secrets:
+            inherit
