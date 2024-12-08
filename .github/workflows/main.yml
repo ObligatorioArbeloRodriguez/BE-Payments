@@ -14,3 +14,4 @@ jobs:
             sonar_project_key: ObligatorioArbeloRodriguez_BE-Payments
             nombre_repo_ecr: payments-repo
         secrets: inherit
+
